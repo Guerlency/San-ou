@@ -147,7 +147,7 @@ export default function App() {
 
   if (loading) return <div className="flex min-h-dvh items-center justify-center text-[#367755]">Chargement de San'Ou…</div>;
   if (!session) return <Login onAuthenticated={() => supabase.auth.getSession().then(({ data }) => setSession(data.session))} />;
-  if (!profile) return <div className="flex min-h-dvh items-center justify-center bg-[#f7f8f5] px-5"><div className="max-w-md rounded-2xl bg-white p-8 text-center"><p className="font-display font-bold">Connexion au service sécurisé…</p>{serverError && <><p role="alert" className="mt-4 text-[13px] text-[#ad583f]">{serverError}. La fonction serveur doit être déployée depuis les paramètres Make.</p><button type="button" onClick={() => supabase.auth.signOut()} className="mt-5 text-[12px] font-bold text-[#26734f] underline">Se déconnecter</button></>}</div></div>;
+{null}
   if (!profile.postalCode) return <PostalGate session={session} onSaved={(postalCode) => setProfile({ ...profile, postalCode })} />;
 
   return <div className="min-h-dvh bg-[#f7f8f5] text-[#19372c] lg:flex">
