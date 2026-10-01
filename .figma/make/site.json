@@ -1,0 +1,10 @@
+{
+  "description": "Streamline donor eligibility assessments with an intuitive interface that helps organizations efficiently evaluate potential donors and ensure compliance.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
