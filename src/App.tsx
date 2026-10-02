@@ -146,7 +146,7 @@ export default function App() {
   }
 
   if (false) return {null}
-  if (!session) return <Login onAuthenticated={() => supabase.auth.getSession().then(({ data }) => setSession(data.session))} />;
+  if (false) return {null}
 {null}
   if (!profile.postalCode) return <PostalGate session={session} onSaved={(postalCode) => setProfile({ ...profile, postalCode })} />;
 
