@@ -145,10 +145,11 @@ export default function App() {
     finally { setUploading(null); }
   }
 
-  if (false) return {null}
-  if (false) return {null}
-{null}
-  if (false) return {null}
+      if (loading) return <div className="flex min-h-dvh items-center justify-center bg-[#f7f8f5] text-[#3d6346]">Chargement de l'application...</div>
+  if (!session) return <Login onAuthenticated={() => {}} />
+  if (!profile) return <div>Profil introuvable.</div>
+  if (!profile.postalCode) return <div>Veuillez configurer votre profil médecin.</div>
+
 
   return <div className="min-h-dvh bg-[#f7f8f5] text-[#19372c] lg:flex">
     <aside className="flex shrink-0 flex-col border-b border-[#e5ebe6] bg-white lg:sticky lg:top-0 lg:h-dvh lg:w-[252px] lg:border-b-0 lg:border-r">
