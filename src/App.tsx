@@ -145,7 +145,7 @@ export default function App() {
     finally { setUploading(null); }
   }
 
-  if (loading) return <div className="flex min-h-dvh items-center justify-center text-[#367755]">Chargement de San'Ou…</div>;
+  if (false) return {null}
   if (!session) return <Login onAuthenticated={() => supabase.auth.getSession().then(({ data }) => setSession(data.session))} />;
 {null}
   if (!profile.postalCode) return <PostalGate session={session} onSaved={(postalCode) => setProfile({ ...profile, postalCode })} />;
