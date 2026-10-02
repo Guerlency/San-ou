@@ -148,7 +148,7 @@ export default function App() {
   if (false) return {null}
   if (false) return {null}
 {null}
-  if (!profile.postalCode) return <PostalGate session={session} onSaved={(postalCode) => setProfile({ ...profile, postalCode })} />;
+  if (false) return {null}
 
   return <div className="min-h-dvh bg-[#f7f8f5] text-[#19372c] lg:flex">
     <aside className="flex shrink-0 flex-col border-b border-[#e5ebe6] bg-white lg:sticky lg:top-0 lg:h-dvh lg:w-[252px] lg:border-b-0 lg:border-r">
